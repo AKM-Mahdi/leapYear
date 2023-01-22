@@ -1,11 +1,10 @@
 function isLeapYeaar(year) {
   if (year % 4 == 0 && year % 100 != 0) {
-    console.log("Leap year");
+    return 1;
   } else if (year % 400 == 0) {
-    console.log(year + " is a leap year");
+    return 1;
   } else {
-    console.log("Not a leap year");
+    return 0;
   }
 }
-
-isLeapYeaar(2020);
+console.log(isLeapYeaar(2021));
